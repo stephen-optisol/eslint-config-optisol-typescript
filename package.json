@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-optisol-typescript",
   "description": "ESlint dependencies for typescript project",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "index.js",
   "scripts": {},
   "repository": {
@@ -12,9 +12,7 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "eslint": "^8.52.0",
-    "prettier": "^3.0.3"
-  },
-  "dependencies": {
+    "prettier": "^3.0.3",
     "@typescript-eslint/eslint-plugin": "^6.9.0",
     "@typescript-eslint/parser": "^6.9.0",
     "eslint-config-airbnb-base": "^15.0.0",
