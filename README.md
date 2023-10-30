@@ -1,21 +1,21 @@
-# optisol-eslint-typescript
+# eslint-config-optisol-typescript
 
 Optisol's typescript ESLint config.
 
 ## Installation
 
 ```sh
-npm install --dev optisol-eslint-typescript eslint
+npm install --dev eslint-config-optisol-typescript eslint prettier
 ```
 
 ## Usage
 
-After installing, update your project's `.eslintrc.json` file to import the rule sets you want:
+After installing, update your project's `.eslintrc<.js|json>` file to import the rule sets you want:
 
 ```js
 {
   "extends" : [
-    "optisol-eslint-typescript"
+    "eslint-config-optisol-typescript"
   ]
 }
 ```
