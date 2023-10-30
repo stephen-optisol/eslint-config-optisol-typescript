@@ -4,8 +4,16 @@ Optisol's typescript ESLint config.
 
 ## Installation
 
+
+``` json
+"postinstall": "patch-package && cp node_modules/eslint-config-optisol-typescript/tsconfig.eslint.json $INIT_CWD"
+```
+
+Before installing this package, you need to add this postinstall script to add the tsconfig.eslint.json file to the root of your project:
+
+
 ```sh
-npm install --dev eslint-config-optisol-typescript eslint prettier
+npm install eslint-config-optisol-typescript eslint prettier --D
 ```
 
 ## Usage
