@@ -1,0 +1,37 @@
+{
+  "name": "eslint-config-optisol-typescript",
+  "description": "ESlint dependencies for typescript project",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephen-optisol/eslint-config-optisol-typescript.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "eslint": "^8.52.0",
+    "prettier": "^3.0.3"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "@typescript-eslint/parser": "^6.9.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-tsdoc": "^0.2.17",
+    "prettier-plugin-organize-imports": "^3.2.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "peerDependencies": {
+    "eslint": "^8.52.0",
+    "prettier": "^3.0.3"
+  }
+}
