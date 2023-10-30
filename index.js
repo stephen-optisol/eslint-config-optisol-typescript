@@ -20,9 +20,9 @@ module.exports = {
   // Specify the parser for TypeScript
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 2020,   // Use ECMAScript version 2020
+    ecmaVersion: 2021,   // Use ECMAScript version 2021
     sourceType: 'module', // Use ES6 modules
-    project: ['./tsconfig.dev.json'],  // Use the TypeScript project configuration file
+    project: ["./tsconfig.eslint.json"],  // Use the TypeScript project configuration file
   },
   // Enable TypeScript-specific ESLint rules
   plugins: ['@typescript-eslint'],
