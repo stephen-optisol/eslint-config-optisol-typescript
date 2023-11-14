@@ -16,6 +16,7 @@ module.exports = {
     'plugin:@typescript-eslint/eslint-recommended',  // ESLint rules for TypeScript
     'plugin:@typescript-eslint/recommended',         // Recommended TypeScript rules
     'plugin:prettier/recommended',           // Prettier recommended rules
+    'unused-imports',                      // ESLint rules for unused imports (must be last)
   ],
   // Specify the parser for TypeScript
   parser: '@typescript-eslint/parser',
@@ -60,6 +61,12 @@ module.exports = {
         endOfLine: 'lf',
       },
     ],  // Specify Prettier formatting options
+    'no-unused-vars': 'off', // or "@typescript-eslint/no-unused-vars": "off",
+    'unused-imports/no-unused-imports': 'error',
+    'unused-imports/no-unused-vars': [
+      'warn',
+      { 'vars': 'all', 'varsIgnorePattern': '^_', 'args': 'after-used', 'argsIgnorePattern': '^_' }
+    ]
   },
   settings: {
     'import/resolver': {

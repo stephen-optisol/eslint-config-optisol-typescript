@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-optisol-typescript",
   "description": "ESlint dependencies for typescript project",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "index.js",
   "scripts": {},
   "repository": {
@@ -22,6 +22,7 @@
     "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-tsdoc": "^0.2.17",
+    "eslint-plugin-unused-imports": "^3.0.0",
     "prettier-plugin-organize-imports": "^3.2.3"
   },
   "publishConfig": {
