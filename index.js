@@ -16,7 +16,6 @@ module.exports = {
     'plugin:@typescript-eslint/eslint-recommended',  // ESLint rules for TypeScript
     'plugin:@typescript-eslint/recommended',         // Recommended TypeScript rules
     'plugin:prettier/recommended',           // Prettier recommended rules
-    'unused-imports',                      // ESLint rules for unused imports (must be last)
   ],
   // Specify the parser for TypeScript
   parser: '@typescript-eslint/parser',
@@ -26,7 +25,10 @@ module.exports = {
     project: ["./tsconfig.eslint.json"],  // Use the TypeScript project configuration file
   },
   // Enable TypeScript-specific ESLint rules
-  plugins: ['@typescript-eslint'],
+  plugins: [
+    '@typescript-eslint',
+    'unused-imports',                      // ESLint rules for unused imports (must be last)
+  ],
   // Customize ESLint rules
   rules: {
     'import/prefer-default-export': 'off',       // Disable the 'prefer-default-export' rule
