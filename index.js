@@ -25,10 +25,7 @@ module.exports = {
     project: ["./tsconfig.eslint.json"],  // Use the TypeScript project configuration file
   },
   // Enable TypeScript-specific ESLint rules
-  plugins: [
-    '@typescript-eslint',
-    'unused-imports',                      // ESLint rules for unused imports (must be last)
-  ],
+  plugins: ['@typescript-eslint'],
   // Customize ESLint rules
   rules: {
     'import/prefer-default-export': 'off',       // Disable the 'prefer-default-export' rule
@@ -63,12 +60,6 @@ module.exports = {
         endOfLine: 'lf',
       },
     ],  // Specify Prettier formatting options
-    'no-unused-vars': 'off', // or "@typescript-eslint/no-unused-vars": "off",
-    'unused-imports/no-unused-imports': 'error',
-    'unused-imports/no-unused-vars': [
-      'warn',
-      { 'vars': 'all', 'varsIgnorePattern': '^_', 'args': 'after-used', 'argsIgnorePattern': '^_' }
-    ]
   },
   settings: {
     'import/resolver': {
